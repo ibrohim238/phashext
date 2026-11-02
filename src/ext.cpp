@@ -144,7 +144,7 @@ static Php::Value extDct(Php::Parameters &params)
 extern "C" {
 PHPCPP_EXPORT void *get_module()
 {
-    static Php::Extension extension("phashext", "0.1.2");
+    static Php::Extension extension("phashext", "0.1.0");
 
     extension.add<extLuma>("phashext_luma", {Php::ByVal("argb", Php::Type::String)});
     extension.add<extPngUnfilter>("phashext_png_unfilter", {
